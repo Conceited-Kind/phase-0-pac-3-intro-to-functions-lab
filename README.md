@@ -321,7 +321,29 @@ defined.
 
 After you get `whisper(string)` passing, the next two tests will be checking to
 see if a specific string is logged when a function is called. You will still
-need to use the `.toUpperCase()` and `.toLowerCase()` methods for
+need to use the `.toUpperCase()` and `.toLowerCase()` methods for  shout(string)
+    ✓ receives one argument and returns it in all caps
+
+  whisper(string)
+    1) receives one argument and returns it in all lowercase
+
+  1 passing (147ms)
+  1 failing
+
+  1) whisper(string)
+       receives one argument and returns it in all lowercase:
+     ReferenceError: whisper is not defined
+      at Context.<anonymous> (test/indexTest.js:10:5)
+      at processImmediate (internal/timers.js:461:21)
+```
+
+Hey! We got one to pass! Time to tackle the next error!
+
+## Your Turn
+
+Now it's your turn to get the rest of the tests to pass. Note that some of them
+require you to use `console.log()` instead of `return` — follow the guidance of
+the tests!
 `logShout(string)` and `logWhisper(string)`. Keep in mind, though, that these
 tests are not looking for return values, only logs.
 

@@ -35,7 +35,7 @@ describe('logWhisper(string)', function() {
 
     console.log.restore();
   })
-})
+}) 
 
 describe('sayHiToHeadphonedRoommate(string)', function() {
   it('returns "I can\'t hear you!" if `string` is lowercase', function() {
